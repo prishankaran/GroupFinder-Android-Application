@@ -6,6 +6,9 @@ As part of CSC554: Human-Computer Interaction
 
 Programming Language: Java (using Android SDK)
 
+Project Contributors: 1] Priyanka Shankaran 2] Ashritha Mohan 3] Gowtham Thuruvas Dinakaran 4] Satvik Andi
+
+
 1] This project involved creating an Android Application, for assisting students to find or create student study groups.
 
 2] This project highly focused on the ease of usability of the application, and the efficiency and effectiveness of the interaction with the user.
