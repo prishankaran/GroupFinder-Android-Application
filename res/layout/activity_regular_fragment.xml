@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genbg"
+    android:orientation="vertical"
+    tools:context=".NewGroupActivity" >
+
+    <TextView
+        android:id="@+id/txtregTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="HH:MM:SS"
+        android:minHeight="35dp"
+        android:minWidth="120dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtregDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="MM/DD/YYYY"
+        android:minHeight="35dp"
+        android:minWidth="120dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtregDayView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/txtregDateView"
+        android:layout_marginTop="300dp"
+        android:text="Day"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtregDateView"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/txtregTimeView"
+        android:layout_marginTop="250dp"
+        android:text="Date From"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtregTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/txtregTime"
+        android:layout_marginLeft="10dp"
+        android:text="Time"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:id="@+id/regSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtregDate"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/myspinner_background"
+        android:dropDownSelector="@drawable/myspinner_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown"
+        android:text="&lt;Select$gt;>"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

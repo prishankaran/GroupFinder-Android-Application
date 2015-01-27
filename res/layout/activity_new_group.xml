@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genbg"
+    tools:context=".NewGroupActivity" >
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Enter Group Name"
+        android:minHeight="35dp"
+        android:minWidth="120dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pager"
+        android:layout_alignTop="@+id/pager"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Group Name"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/spinner"
+        android:text="Course"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnCreateGrp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/btnBackCreate"
+        android:background="@drawable/button_green_custom"
+        android:text="Create"
+        android:textColor="@drawable/text_custom" />
+
+    <Button
+        android:id="@+id/btnBackCreate"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_white_custom"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@drawable/text_custom" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toStartOf="@+id/editText1"
+        android:background="@drawable/myspinner_background"
+        android:dropDownSelector="@drawable/myspinner_selector"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:spinnerStyle="@android:style/Widget.Spinner.DropDown" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Location of Meet"
+        android:minHeight="35dp"
+        android:minWidth="120dp" />
+
+</RelativeLayout>

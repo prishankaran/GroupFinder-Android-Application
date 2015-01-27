@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/genbg"
+    tools:context=".NewGroupActivity" >
+
+    <TextView
+        android:id="@+id/txtadhocTimeView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:text="Time"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtadhocDateView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:text="Date"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtadhocTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtadhocTimeView"
+        android:layout_alignBottom="@+id/txtadhocTimeView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="HH:MM:SS"
+        android:minHeight="35dp"
+        android:minWidth="120dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtadhocDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="MM/DD/YYYY"
+        android:minHeight="35dp"
+        android:minWidth="120dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
